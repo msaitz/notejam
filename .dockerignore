@@ -1,0 +1,4 @@
+.git*
+*.rst
+*.md
+test*
