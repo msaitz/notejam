@@ -29,6 +29,28 @@ Clone the repo:
     $ git clone git@github.com:komarserjio/notejam.git YOUR_PROJECT_DIR/
 
 -------
+Build image
+-------
+.. code-block:: bash
+
+    $ cd YOUR_PROJECT_DIR/flask/
+    $ docker build . -t notejam
+
+-------
+Run from image
+-------
+
+.. code-block:: bash
+
+    # Run the image built locally:
+    $ docker run notejam
+
+    # Run the pre-built image from gcr.io
+    $ docker run gcr.io/msaitz/notejam:TAG
+
+Go to http://127.0.0.1:5000/ in your browser.
+
+-------
 Install
 -------
 Use `virtualenv <http://www.virtualenv.org>`_ or `virtualenvwrapper <http://virtualenvwrapper.readthedocs.org/>`_
@@ -42,7 +64,7 @@ Install dependencies:
     $ pip install -r requirements.txt
 
 ------
-Launch
+Local run
 ------
 
 Start flask web server:
