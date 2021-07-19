@@ -329,4 +329,4 @@ def signed_in_user(user):
 
 
 if __name__ == '__main__':
-    unittest.main()
+    unittest.main(verbosity=2)
