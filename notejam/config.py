@@ -17,12 +17,12 @@ class ProductionConfig(Config):
 class DevelopmentConfig(Config):
     DEVELOPMENT = True
     DEBUG = True
-    SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(os.getcwd(),
-                                                          'notejam.db')
+    SQLALCHEMY_DATABASE_URI = os.environ.get('SQLALCHEMY_DATABASE_URI')
 
 
 class TestingConfig(Config):
     TESTING = True
+    DEBUG = True
     """
     Tests will run WAY faster using in memory SQLITE database
     See: https://docs.sqlalchemy.org/en/13/dialects/sqlite.html#connect-strings

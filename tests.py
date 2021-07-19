@@ -110,7 +110,7 @@ class SigninTestCase(NotejamBaseTestCase):
         self.create_user(**data)
 
         response = self.client.post(url_for('signin'), data=data)
-        self.assertRedirects(response, url_for('home'))
+        self.assertRedirects(response, url_for('homes'))
 
     def test_signin_fail(self):
         response = self.client.post(
