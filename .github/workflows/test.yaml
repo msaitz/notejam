@@ -9,6 +9,8 @@ on:
       - '*.py'
       - '!**.rst'
   push:
+    branches-ignore:
+      - master
     paths:
       - '.github/**'
       - 'Dockerfile'
