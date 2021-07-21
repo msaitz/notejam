@@ -2,6 +2,8 @@
 Notejam: Flask
 **************
 
+Flask project forked from https://github.com/komarserjio/notejam
+
 Notejam application implemented using `Flask <http://flask.pocoo.org/>`_ microframework.
 
 Flask version: 0.9
